@@ -1,0 +1,148 @@
+%%
+%% Copyright (c) 2018-2019 Weitian LI <wt@liwt.net>
+%% CC BY 4.0 License
+%%
+%% Résumé
+%% ------
+%% A short document (1-2 pages) to sum up the job-related accomplishments
+%% and experience.
+%%
+%% Checklist
+%% ---------
+%% * Contact Information
+%% * Work History / Experience
+%% * Education
+%% * Skills
+%% * Summary & Objective (optional)
+%% * Hobbies & Interests (optional)
+%%
+%% Credits
+%% -------
+%% * CV vs. Resume: What is the Difference? When to Use Which?
+%%   https://uptowork.com/blog/cv-vs-resume-difference
+%% * How to Make a Resume: A Step-by-Step Guide (+30 Examples)
+%%   https://uptowork.com/blog/how-to-make-a-resume
+%% * Entry-Level Resume: Sample and Complete Guide (+20 Examples)
+%%   https://uptowork.com/blog/entry-level-resume-example
+%%
+%% Created: 2018-04-14
+%%
+
+% English version
+\documentclass{resume}
+\usepackage{./fontawesome5/fontawesome5}
+
+% File information shown at the footer of the last page
+\fileinfo{%
+  % \faCopyright{} 2018--2019 Weitian LI,
+  % \creativecommons{by}{4.0},
+  % \githublink{liweitianux}{resume},
+  % \faCalendarAlt{} \today
+}
+
+\name{Weiye}{Lin}
+
+%\taglineicon{\faBinoculars}
+%\tagline{???}
+\keywords{Linux, Programming}
+
+\socialinfo{
+  \mobile{156-2507-6252}
+  \email{claviering@gmail.com}
+  \github{claviering} \\
+  \degree{network engineering \textbullet bachelor}
+  \university{South China Normal University}
+  \birthday{1997 February}
+  \home{GuangZhou}
+}
+
+\begin{document}
+\makeheader
+
+%======================================================================
+% Summary & Objectives
+%======================================================================
+Computer major (network engineering direction), with computer, network, security and cryptography foundation, good at front-end engineering development, keen on computer and front-end technology, experience with Linux and Mac, front-end framework master Vue, React and wepy. The Node side masters Express and Koa. The configuration used Webpack and Gulp. Actively practice the spirit of free and open source. \link{https://github.com/claviering}{GitHub} 
+
+%======================================================================
+\sectionTitle{Competences \& Languages}{\faWrench}
+%======================================================================
+\begin{competences}[10em]
+  \comptence{Programming}{%
+    C, JavaScript, CSS, HTML, TypeScript
+  }
+  \comptence{Tools}{%
+    Git, Make, VSCode, Jenkins
+  }
+  \comptence{Web Development}{%
+    JavaScript, jQuery, Bootstrap
+  }
+  \comptence{\icon{\faLanguage} Languages}{
+    \textbf{English} ---
+      reading \& writing;
+      listening \& speaking
+  }
+\end{competences}
+
+%======================================================================
+\sectionTitle{Education}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {September 2015}%
+    {South China Normal University}%
+    {Computer Science}%
+    {Network Engineering}%
+    {Bachelor's Degree}
+\end{educations}
+
+%======================================================================
+\sectionTitle{Front End Skills}{\faCogs}
+%======================================================================
+\begin{itemize}
+  \item Develop web front-end using react and react's ecosphere, also develop mobile front-end using vue and vue's ecosphere.
+  \item Use koa and express in nodejs for back-end connecting to Redis and MongoDB
+  \item Familiar with ES5, ES6, ES7 and so on
+  \item Use Component in coding, reuse code in project, find coding style
+  \item Proficient in webpack
+\end{itemize}
+
+%======================================================================
+\sectionTitle{Personal Projects}{\faCode}
+%======================================================================
+\begin{itemize}
+  \item \link{https://github.com/claviering/koa-home}{\texttt{koa-home}}:
+    (NodeJS, Koa)
+    Koa Back-End Demo。About session redis log mongo socket middleware
+  \item \link{https://github.com/claviering/express-home}{\texttt{express-home}}:
+    (NodeJS, Express)
+    express Back-End Demo
+  \item \link{https://github.com/claviering/webpack4-config}{\texttt{webpack4-config}}:
+    (Webpack 4)
+    Wepack 4 + balel 7 config for Vue、React and TypeScript
+  \item \link{https://github.com/claviering/latex-scnu}{\texttt{latex-scnu}}:
+    (LaTeX)
+    About study TLS 1.3
+  \item \link{https://github.com/claviering/wepy-demo}{\texttt{wepy-demo}}:
+    (wepy)
+    Weixin Applets demo。Routers，Store Manager，Websocket
+  \item \link{https://github.com/claviering/nodejs_sso}{\texttt{nodejs\_sso}}:
+    (Nodejs)
+    SSO in NodeJS
+\end{itemize}
+
+%======================================================================
+\sectionTitle{Internships}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+  \experience%
+    [2019.05]%
+    {2018.10}%
+    {Front-End engineer @ Trendy-Group}%
+    [\begin{itemize}
+      \item  CRM Project，Web App，using React and NodeJS
+      \item MA Project，Mobile Web App, using Vue and NodeJS
+    \end{itemize}]
+\end{experiences}
+
+\end{document}

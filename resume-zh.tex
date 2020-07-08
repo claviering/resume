@@ -1,0 +1,136 @@
+%%
+%% Copyright (c) 2018-2019 Weitian LI <wt@liwt.net>
+%% CC BY 4.0 License
+%%
+%% Created: 2018-04-11
+%%
+
+% Chinese version
+\documentclass[zh]{resume}
+\usepackage{./fontawesome5/fontawesome5}
+
+% File information shown at the footer of the last page
+\fileinfo{%
+  % \faCopyright{} 2018--2019 Weitian LI,
+  % \creativecommons{by}{4.0},
+  % \githublink{liweitianux}{resume},
+  % \faCalendarAlt{} \today
+}
+
+\name{伟业}{林}
+
+%\taglineicon{\faBinoculars}
+%\tagline{???}
+\keywords{BSD, Linux, Programming, Python, C, Shell, DevOps, SysAdmin}
+
+\socialinfo{
+  \mobile{156-2507-6252}
+  \email{claviering@gmail.com}
+  \github{claviering} \\
+  \university{华南师范大学}
+  \degree{网络工程 \textbullet 本科}
+  \home{广东 \textbullet 广州}
+  \birthday{1997-02-11}
+}
+
+\begin{document}
+\makeheader
+
+%======================================================================
+% Summary & Objectives
+%======================================================================
+{\onehalfspacing\hspace{2em}%
+计算机专业，有网络、安全学与密码学基础，擅长前端工程开发，热衷计算机和前端技术，熟悉 ES2015+ 规范、通信协议、网络、浏览器，有 Linux 和 Mac 使用经验，实践应用过前端框架 Vue、React 和 Angular。有 Node 开发经验，使用过 Express、Koa 和 Egg。配置使用过 Webpack 和 Gulp。
+积极实践自由开源精神，在 \link{https://github.com/claviering}{GitHub} 上分享项目。
+\par}
+
+%======================================================================
+\sectionTitle{技能和语言}{\faWrench}
+%======================================================================
+\begin{competences}
+  \comptence{编程}{%
+    C, JavaScript, Python, TypeScript
+  }
+  \comptence{工具}{%
+    Git, Make, VSCode, Jenkins
+  }
+  \comptence{\icon{\faLanguage} 语言}{
+    \textbf{英语} --- 大学四级
+  }
+\end{competences}
+
+%======================================================================
+\sectionTitle{教育背景}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {2015.09}%
+    [2019.07]%
+    {华南师范大学}%
+    {计算机学院}%
+    {网络工程}%
+    {本科}
+\end{educations}
+
+%======================================================================
+\sectionTitle{前端开发技能}{\faCogs}
+%======================================================================
+\begin{itemize}
+  \item 熟悉使用 react vue 技术栈开发应用，并配合 Webpack 打包 web 端和移动端项目
+  \item 使用 NodeJS 搭建服务器，使用过 Express, Koa 和 Egg，操作 Redis 和 MongoDB 数据库
+  \item 组件化思想，代码复用，良好的代码风格，追求优雅的代码, 能配合设计师完成 UI 设计
+\end{itemize}
+
+%======================================================================
+\sectionTitle{个人项目}{\faCode}
+%======================================================================
+\begin{itemize}
+  \item \link{https://github.com/claviering/koa-home}{\texttt{koa-home}}:
+    (NodeJS, Koa)
+    Koa 后端 Demo。基本的 session redis log mongo socket 中间件
+  % \item \link{https://github.com/claviering/express-home}{\texttt{express-home}}:
+  %   (NodeJS, Express)
+  %   express 后端 Demo
+  \item \link{https://github.com/claviering/nodejs_sso}{\texttt{nodejs\_sso}}:
+    (Nodejs)
+    Nodejs 实现 sso
+  % \item \link{https://github.com/claviering/webpack4-config}{\texttt{webpack4-config}}:
+  %   (Webpack 4)
+  %   Wepack 4 加 balel 7 配置 Vue、React 和 TS
+  \item \link{https://github.com/claviering/wepy-demo}{\texttt{wepy-demo}}:
+    (wepy)
+    全栈小程序 demo。实现基本路由，状态管理，Websocket
+  \item \link{https://github.com/claviering/myney}{\texttt{myney}}:
+  微信小程序-记账小程序，使用云函数开发。微信搜索 myney 体验
+
+\end{itemize}
+
+%======================================================================
+\sectionTitle{工作经历}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+  \experience%
+    [2018.10]%
+    {2020.05}%
+    {前端开发工程师 @ 赫基集团}%
+    [\begin{itemize}
+      \item CRM 项目功能开发和维护。主要有：1. 储值卡功能模块开发，新建充值提案，新建门店转移，报表查询。2. 门店管理模块：新建门店会员转移。客户分组功能开发，完成复杂多逻辑多参数对接接口。 3. 报表页面开发，使用 echarts 显示报表数据
+      \item MA 项目开发和维护。主要有： 1. 数据分析功能。包含销售分析，商品分析，导购排行，门店排行。区域时间，金额的多维度筛选，不同权限的控制筛选条件 2. 会员功能。分为注册会员，升级会员，消费会员模块
+      \item 门店管理端促销模块开发。商品改价提案型，单条件商品促销提案型, 组合条件商品促销提案型，20种促销类型的不同规则生成，不同表单生成。
+      \item 微分销小程序。我的会员功能，组货功能，素材中心开发。
+      \item TMS 项目开发。使用 vue + ts 开发，汇总报表、发货单明细、路由明细功能
+      \item ITOPS 运营平台。消息中心开发，使用 websocket 推送消息到其他应用。消息保存到 mongodb。完成会员中心，渠道中心开发。
+    \end{itemize}]
+
+  % \separator{0.5ex}
+  % \experience%
+  %   [2018.10]%
+  %   {2019.04}%
+  %   {前端开发工程师(实习) @ 赫基集团}%
+  %   [\begin{itemize}
+  %     \item CRM 项目开发，Web 端，使用 React，NodeJS 做中台。实现优惠券、会员相关等功能。
+  %     \item MA 项目开发，移动端收银项目。使用 Vue 框架。商品功能，会员功能等。
+  %   \end{itemize}]
+\end{experiences}
+
+\end{document}
