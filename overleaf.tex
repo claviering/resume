@@ -1,0 +1,126 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{林伟业}
+
+\basicInfo{
+  \email{claviering@gmail.com} \textperiodcentered\ 
+  \phone{15625076252} \textperiodcentered\ }
+ 
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{华南师范大学}}{2015 --2019}
+\textit{全日制本科毕业}\ 网络工程
+
+\section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{CRM项目}}{2018年10月 -- 至今}
+\role{技术栈}{React、Redux、Antd、Axios, react-router, Koa}
+客户关系系统，负责前端开发、Node 端开发
+\begin{itemize}
+  \item 二次封装 Antd Form 组件，实现通用易拓展的搜索、表单组件
+  \item 二次封装 Andt Table 组件，适用于本地数组和网络数据，封装一键下载功能，翻页功能
+  \item 类组件和函数组件开发使用，代码复用组件思想
+  \item 使用 echarts 绘制报表，饼状图，柱状图等
+  \item 使用 nodejs controller 封装后台接口数据，拼接门店名称，导购员名称等
+  \item 日常系统维护与更新，问题排除修复
+\end{itemize}
+
+\datedsubsection{\textbf{MA项目}}{2018年12月 -- 至今}
+\role{技术栈}{vue、vue-router、vux、vuex}
+\begin{onehalfspacing}
+门店收银系统手机端，负责前端开发、Node 端开发
+\begin{itemize}
+  \item 使用 vconsole 真机调试，修复 Android 和 IOS 日期兼容性
+  \item 使用工厂模式根据不同角色不同区域分配不同按钮权限
+  \item 使用 localstorage 和 路由拦截，保存第一次进入的页面，解决系统授权登陆后回跳
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{SSC}}{2018年8月 -- 至今}
+\role{技术栈}{angular v1.3.17、gulp、express}
+\begin{onehalfspacing}
+门店管理系统，负责前端开发、Node 端开发
+\begin{itemize}
+  \item 使用工厂模式适配 20 多种促销类型的新建，修改
+  \item 表单正则表达式校验输入
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{TMS}}{2019年7月 -- 至今}
+\role{技术栈}{typescript，vue}
+\begin{onehalfspacing}
+运输管理系统，负责前端开发、Node 端开发
+\begin{itemize}
+  \item ts 开发
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{小程序}}{2020年2月 -- 至今}
+\role{技术栈}{原生小程序框架开发}
+\begin{onehalfspacing}
+OCH、M60、FP、TRE、CG小程序开发
+\begin{itemize}
+  \item 编写shell脚本，一个项目的修改同步到其他项目
+  \item 日常需求开发，功能迭代更新
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{消费者端项目}}{2020年4月 -- 至今}
+\role{技术栈}{vue、vue-router、vux、vuex}
+\begin{onehalfspacing}
+消费者端项目
+\begin{itemize}
+  \item TRE十周年，图片使用 CDN 加速，使用 display: none 隐藏元素实现预加载图片；使用 window.onresize 事件兼容Android手机键盘弹起样式错乱；使用 myAudio.play() 解决 IOS mp3 不能自动播放问题；
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{myney}}{2019年10月 -- 至今}
+\role{技术栈}{原生小程序框架开发}
+\begin{onehalfspacing}
+微信小程序-记账小程序，使用云函数开发。微信搜索 myney 体验
+\begin{itemize}
+  \item 使用 localstorage 缓存客户语言设置
+  \item 添加左滑右滑操作切换时间
+  \item 使用 onshow 生命周期，解决添加操作后读取接口更新
+  \item 使用 toFixed 解决小数运算出现小数点后多为0的问题
+\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+% \section{\faCogs\ IT 技能}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+%   \item 编程语言: C == Python > C++ > Java
+%   \item 平台: Linux
+%   \item 开发: xxx
+% \end{itemize}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 博客: https://claviering.github.io/
+  \item GitHub: https://github.com/claviering
+  \item codepen: https://codepen.io/dashboard/
+  \item 掘金 https://juejin.im/user/1626932940117373
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
