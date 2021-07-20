@@ -8,6 +8,7 @@
 % Chinese version
 \documentclass[zh]{resume}
 \usepackage{./fontawesome5/fontawesome5}
+% 图标 http://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf
 
 % File information shown at the footer of the last page
 \fileinfo{%
@@ -30,7 +31,8 @@
   % \university{华南师范大学}
   % \degree{网络工程 \textbullet 本科}
   % \home{广东 \textbullet 广州}
-  \birthday{1997-02}
+  % \birthday{1997-02}
+  \faAdjust{工作经验-3年}
 }
 
 \begin{document}
@@ -72,18 +74,48 @@
 \end{educations}
 
 %======================================================================
-\sectionTitle{前端开发技能}{\faCogs}
+\sectionTitle{工作经历}{\faBriefcase}
 %======================================================================
-\begin{itemize}
-  \item 熟悉使用 react vue 技术栈开发应用，并配合 Webpack 打包 web 端和移动端项目
-  \item 使用 NodeJS 搭建服务器，使用过 Express, Koa 和 Egg，操作 Redis 和 MongoDB 数据库
-  \item 组件化思想，代码复用，良好的代码风格，能配合设计师完成 UI 设计
-\end{itemize}
+\begin{experiences}
+  \experience%
+    [2018.10]%
+    {至今}%
+    {前端开发工程师 @ 赫基集团}%
+    [\begin{itemize}
+      \item CRM 项目。\\ 技术栈: react 和 Koa \\ 客户关系管理: 导购和会员的管理，事件关怀，活动推送等，主要负责有：\\ 1. 基于antd design 组件封装业务组件。\\ 2. nodejs 封装多个业务接口，抽象出共用接口。 \\ 3. 使用 MongoDB 分离前端数据 \\ 
+      % \item MA 项目。主要有： \\ 1. 功能模块的权限控制 \\ 2. 会员功能。分为注册会员，升级会员，消费会员模块
+      \item SSC 项目。\\ 技术栈 anglar 1.3。\\ 主要负责有促销活动模块，各种活动模板，使用策略处理各种复杂的促销类型。 \\ 
+      % \item 收银端。文字消息3种跑马灯效果实现。
+      \item 微分销小程序。\\ 使用原生开发 \\ 抽离出公共样式和公共方法，分离出基础样式、颜色样式、文字样式等。\\ 使用 git submodule 管理多个小程序公共模块 \\ 
+      \item ITOPS 运营平台。\\ 技术栈是 vue 和 eggjs。\\ 主要负责有消息中心开发，使用 websocket 推送消息到其他应用。\\ 设计消息实体，消息保存到 mongodb。\\ 开发 Eggjs 插件实现应用重启初始化定时任务。各应用加入不同的 room，实现多应用对接 \\ 
+      \item 构建门店编号的二叉搜索树 \\ 技术栈是 esbuild 和 TypeScript \\ 用于快速判断用户是否有门店权限和搜索门店。使用 esbuild 打包成库，提供给其他项目使用。\\
+      \item 编写一些便利 shell 小脚本。打包上传小程序代码、任意图片格式转gif、zip压缩脚本。 \\ 
+    \end{itemize}]
+
+  % \separator{0.5ex}
+  % \experience%
+  %   [2018.10]%
+  %   {2019.04}%
+  %   {前端开发工程师(实习) @ 赫基集团}%
+  %   [\begin{itemize}
+  %     \item CRM 项目开发，Web 端，使用 React，NodeJS 做中台。实现优惠券、会员相关等功能。
+  %     \item MA 项目开发，移动端收银项目。使用 Vue 框架。商品功能，会员功能等。
+  %   \end{itemize}]
+\end{experiences}
+
+% %======================================================================
+% \sectionTitle{前端开发技能}{\faCogs}
+% %======================================================================
+% \begin{itemize}
+%   \item 熟悉使用 react vue 技术栈开发应用，并配合 Webpack 打包 web 端和移动端项目
+%   \item 使用 NodeJS 搭建服务器，使用过 Express, Koa 和 Egg，操作 Redis 和 MongoDB 数据库
+%   \item 组件化思想，代码复用，良好的代码风格，能配合设计师完成 UI 设计
+% \end{itemize}
 
 %======================================================================
-\sectionTitle{个人项目}{\faCode}
+% \sectionTitle{个人项目}{\faCode}
 %======================================================================
-\begin{itemize}
+% \begin{itemize}
   % \item \link{https://github.com/claviering/koa-home}{\texttt{koa-home}}:
   %   (NodeJS, Koa)
   %   Koa 后端 Demo。基本的 session redis log mongo socket 中间件
@@ -99,41 +131,13 @@
   % \item \link{https://github.com/claviering/wepy-demo}{\texttt{wepy-demo}}:
   %   (wepy)
   %   全栈小程序 demo。实现基本路由，状态管理，Websocket
-  \item \link{https://github.com/claviering/myney}{\texttt{myney}}:
-  微信小程序-记账小程序，使用云函数开发。微信搜索 myney 体验
-  \item \link{https://codepen.io/claviering}{\texttt{codepen}}:
-  codepen 上的一些 demo
+%   \item \link{https://github.com/claviering/myney}{\texttt{myney}}:
+%   微信小程序-记账小程序，使用云函数开发。微信搜索 myney 体验
+%   \item \link{https://codepen.io/claviering}{\texttt{codepen}}:
+%   codepen 上的一些 demo
 
-\end{itemize}
+% \end{itemize}
 
-%======================================================================
-\sectionTitle{工作经历}{\faBriefcase}
-%======================================================================
-\begin{experiences}
-  \experience%
-    [2018.10]%
-    {至今}%
-    {前端开发工程师 @ 赫基集团}%
-    [\begin{itemize}
-      \item CRM 项目。\\ 客户关系管理: 导购和会员的管理，事件关怀，活动推送等，主要负责有：\\ 1. 基于antd design 组件封装业务组件。\\ 2. nodejs 封装多个业务接口，抽象出共用接口。 \\ 3. 使用 MongoDB 分离前端数据
-      % \item MA 项目。主要有： \\ 1. 功能模块的权限控制 \\ 2. 会员功能。分为注册会员，升级会员，消费会员模块
-      \item SSC 项目。\\ 主要负责有促销活动模块，各种活动模板，使用策略处理各种复杂的促销类型。
-      % \item 收银端。文字消息3种跑马灯效果实现。
-      \item 微分销小程序。\\ 抽离出公共样式和公共方法，分离出基础样式、颜色样式、文字样式等。\\ 使用 git submodule 管理多个小程序公共模块
-      \item ITOPS 运营平台。\\ 主要负责有消息中心开发，使用 websocket 推送消息到其他应用。\\ 设计消息实体，消息保存到 mongodb。\\ 开发 Eggjs 插件实现应用重启初始化定时任务。各应用加入不同的 room，实现多应用对接
-      \item 构建门店编号的二叉搜索树，用于快速判断用户是否有门店权限和搜索门店。使用 esbuild 打包成库，提供给其他项目使用。
-      \item 编写一些便利小脚本。打包上传小程序代码、任意图片格式转gif、zip压缩脚本。
-    \end{itemize}]
 
-  % \separator{0.5ex}
-  % \experience%
-  %   [2018.10]%
-  %   {2019.04}%
-  %   {前端开发工程师(实习) @ 赫基集团}%
-  %   [\begin{itemize}
-  %     \item CRM 项目开发，Web 端，使用 React，NodeJS 做中台。实现优惠券、会员相关等功能。
-  %     \item MA 项目开发，移动端收银项目。使用 Vue 框架。商品功能，会员功能等。
-  %   \end{itemize}]
-\end{experiences}
 
 \end{document}
